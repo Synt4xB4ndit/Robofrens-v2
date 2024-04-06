@@ -1,8 +1,12 @@
-import React, { Component } from React;
+import React, { Component } from 'react';
 
 class Header extends Component {
+    shouldComponentUpdate(nextProps, nextState) {
+        return false;
+    }
+
     render() {
-        <h1 className="f1">Robofriends</h1>
+        return <h1 className="f1">Robofriends</h1>
     }
 }
 
